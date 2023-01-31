@@ -1,0 +1,156 @@
+@import "../../../main.scss";
+
+$color-btn: #70c7a7;
+body {
+    background-color: #fafafa;
+}
+.survey {
+    position: fixed;
+    margin-left: 17rem;
+}
+
+.new-survey-btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    border: none;
+    color: $color-light;
+    background-color: $color-btn;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.survey-list {
+    margin-left: 13rem;
+    margin-top: 2rem;
+    padding: 1.5rem 5rem;
+    background-color: $color-light;
+    border-radius: 0.5em;
+}
+
+.survey-nav {
+    position: static;
+    margin: 1rem;
+    letter-spacing: 3px;
+    padding: 1em;
+    background-color: #fffefe;
+    border-radius: 0.5rem;
+    h3 {
+        margin-left: 3rem;
+        color: $color-dark;
+    }
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cancel-btn {
+    margin-right: 1em;
+    background-color: #ff989e;
+}
+#save-btn {
+    margin-right: 3em;
+    background-color: #90caf9;
+}
+
+.survey-block {
+    background-color: #fffefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    max-width: 50vw;
+    border-radius: 0.5em;
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#description {
+    margin-top: -1.2rem;
+    font-size: 0.8rem;
+}
+#icon-option {
+    margin-top: 0.2em;
+    margin-right: 0.3em;
+}
+
+.add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2em;
+}
+
+#table-container {
+    margin-top: 1rem;
+    border-radius: 1em;
+}
+
+#table-head {
+    background-color: $color-primary;
+}
+
+#table-cell {
+    color: #fafafa;
+    font-weight: 700;
+}
+
+#delete-btn {
+    background-color: #ff7a82;
+    color: $color-dark;
+}
+.header-bar {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#survey-search-bar {
+    width: 30vw;
+}
+
+.all-user-container {
+    min-width: 15vw;
+    border-radius: 0.5em;
+    background-color: #fffefe;
+    padding: 0.5em 0 0.5em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+
+    span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: $color-dark;
+    }
+}
+
+#all-user-avatar {
+    background-color: $color-primary;
+}
+
+.filter-nav{
+    width:50vw;
+    background-color:white;
+    background-color: #fffefe;
+    padding:1em 2em;
+    border-radius:0.5em;
+    margin:0 auto;
+    margin-bottom:1em;
+}

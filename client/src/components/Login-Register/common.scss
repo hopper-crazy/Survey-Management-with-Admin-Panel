@@ -1,0 +1,109 @@
+@import "../../main.scss";
+
+.main-container {
+    display: flex;
+    max-width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.auth-image {
+    width: 40rem;
+    height: 85vh;
+}
+
+.form-container {
+    transition-timing-function: ease-in;
+    // background-image:linear-gradient(#DDDD,$color-seconday);
+    background-color: #edf2f4;
+    border-radius: 0.5em;
+    width: 28rem;
+    padding: 1em;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    margin: 1em 0 1em 0;
+
+    .form {
+        width: 22rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: $color-dark;
+    }
+    label {
+        font-size: medium;
+    }
+    .info {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 0.85em;
+        padding-bottom:0.3em;
+    }
+
+    .MuiFormLabel-root {
+        .Mui-focused {
+            color: $color-dark;
+        }
+    }
+
+    .register-btn {
+        border: none;
+        display: inline-block;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.92em 11.5em;
+        border-radius: 0.5em;
+        background: $color-primary;
+        color: $color-light;
+        cursor: pointer;
+    }
+    .login {
+        padding: 0.92em 9.4em;
+    }
+}
+.login-cont {
+    width:28em;
+    padding:3em 0em;
+}
+#date {
+    margin-top: -0.4em;
+}
+
+
+#login-form {
+    width: 18rem;
+}
+
+.circle-1 {
+    position: absolute;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.circle-1::before {
+    content: "";
+    position: absolute;
+    transform: translate(40%, 40%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(168, 218, 220, 0.4);
+}
+
+.circle-2 {
+    position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    bottom: 50%;
+    left: 15%;
+    border-radius: 50%;
+    background-color: rgba(168, 218, 220, 0.4);
+    z-index: -1;
+}
